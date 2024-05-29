@@ -9,11 +9,23 @@ body{
 .tommenu{
     display: flex;
     background-color: #3b362e;
+    a{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 15px 30px;
+    }
 }
 
-a{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 15px 30px;
+
+.submenu{
+    max-width: 200px;
+    a{
+        border-bottom: 1px solid #000;
+        padding: 10px 20px;
+        background-color: #fff;
+        font-size: 16px;
+        display: block;
+        color: #000;
+    }
 }
