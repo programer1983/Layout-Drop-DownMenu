@@ -24,7 +24,7 @@ body{
     z-index: 5;
     transform-origin: 0 0;
     transform: rotateX(-90deg);
-    transition: .3s linear;
+    transition: transform .3s linear;
     visibility: hidden;
     opacity: 0;
     a{
@@ -51,5 +51,5 @@ body{
    position: absolute;
    top: 0;
    left: 100%;
-   transition: .3s linear;
+   transition: transform .3s linear;
 }
