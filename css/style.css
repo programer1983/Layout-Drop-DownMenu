@@ -19,7 +19,14 @@ body{
 
 
 .submenu{
-    max-width: 200px;
+    min-width: 200px;
+    position: absolute;
+    z-index: 5;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    visibility: hidden;
+    opacity: 0;
     a{
         border-bottom: 1px solid #000;
         padding: 10px 20px;
@@ -28,4 +35,21 @@ body{
         display: block;
         color: #000;
     }
+}
+
+.tommenu  li:hover > .submenu{
+    transform: rotateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu .submenu{
+   position: absolute;
+   top: 0;
+   left: 100%;
+   transition: .3s linear;
 }
